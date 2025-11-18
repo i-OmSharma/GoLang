@@ -1,0 +1,69 @@
+* Go = C + Strings + Garbage Collection + Concurency.
+
+1. Strong and static types programming language.
+    - variable can't be changed overtime and must be defined compile time.
+    - helps in capture error in compile time easily.
+ 
+ 2. Compile Time: GO is desgined fr faster compilation without the need of dependency checking.
+ 
+ 
+3. String porcessing: frequent process and analyzes large amount of text data, require efficient manipulation of string.
+    - Go has Compregensive set of string functions, which also uses grabege collection to make working string more effecient compared to some other languages like c++.
+
+4. Concurency: In Go refereces to the ability of a program to execute mutiple taks independently but not necessarily simultaniously. 
+    - It's about structuring ur program in a way that allow different parts of it run indendently, making efficient use of available resources.
+    
+    
+* while concurency is about managing many taks , parallelism is about executing taks simultaniously.
+
+5. In Go, a goroutine is lightweight thread managed by the Go runtime.
+
+6. Lightweight: Goroutine takes only 8 kilobyte and u can have thousands of them.
+
+7. Zero Dependency.
+
+8. Built in for testing.
+
+9. go mod communicate with go Path.
+
+10. Go Modules simplifyt the maagementb of dependenies and project structure.
+
+11. go.mod file contains informations about ur project, including its name and depedencies.
+
+12. There is no classes in GO, everything is Package.
+
+13. No concept of OOPs. struct and interfaces is used for concepts of OOPs.
+
+14. Packages are Project directiries. Every .go file start with package name.
+
+15. Program start with "main" package, which includes "main()" function.
+
+16. Go uses relative imports.
+
+17. Packages are tightly coupled with directiries.
+
+18. In GO for a file to the entry point of an executable porgram, it must belong to the main package adn contain a mian function.
+
+19. When u use "go run" command to execute a GO porgram, the GO runtime looks for the main function in the main Package and execute it.
+
+20. File name can be anything,but package name should be same for each file in that dir.
+
+21. if u want to use differentr package name u can make sub dir in the parent dir. And make imports and use them.
+
+22. Package name should be same inside all files in a dir, but file names can be different in a dir.
+
+23. variable name should be capital (first letter) to make that variable resuable, and used in another dir or files exportable- accessable from other Packages. If u intialise a vairable with small then it will be only used in that file only. Only within the same package.
+    - same goes for funciton , PublifcFuncion() -> Publically, exportable.
+    - same rule for, privateFunction() -> private, non exportable.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Vaiable in GO-
+
+var - normal vaiable, this can be changed.
+const - this is constant type.
+:= - this is only used inside the function, same as js let.
+
+
+
+    
