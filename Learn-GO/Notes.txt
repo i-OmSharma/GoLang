@@ -55,6 +55,10 @@
 23. variable name should be capital (first letter) to make that variable resuable, and used in another dir or files exportable- accessable from other Packages. If u intialise a vairable with small then it will be only used in that file only. Only within the same package.
     - same goes for funciton , PublifcFuncion() -> Publically, exportable.
     - same rule for, privateFunction() -> private, non exportable.
+    
+24. "Printf" print formatted, allow u to controll the output by using format specifiers similart as c.
+
+25. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -65,5 +69,13 @@ const - this is constant type.
 := - this is only used inside the function, same as js let.
 
 
+Format specifiers:
 
+    - %d: Integer
+    - %s: String
+    - %T: Tells the type of the value
+    - %.3f: Float values(The number after the dot in %f pecifies the precision for the floatin-point numbers)
+
+
+\n new line 
     
