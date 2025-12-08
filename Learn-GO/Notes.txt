@@ -58,7 +58,13 @@
     
 24. "Printf" print formatted, allow u to controll the output by using format specifiers similart as c.
 
-25. 
+25. "Scan" user input, but it reads until the first whitespace character.
+    - Go (basic fmt.Scan) space ke baad input cut kar deta hai, because it only reads a single token.
+    - to counter this: u need to use "bufio" package's "NewScanner" or "ReadString" function for more complex scenarios.
+    - bufio.NewReader(os.Stdin)
+    - to use "bufio" we make reader. Buffer reader is created that reads from standard inputs.(os.Stdin)
+    
+26. Buffer Reader is a type of reader, thart reads data frim an underlying source, such as a file or standard input(keyboard or mouse), and store data in buffer. The buffer is a teporary storage area in memory. Buffer reader are commonly used to improve the effeciency on imput operations. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -78,4 +84,5 @@ Format specifiers:
 
 
 \n new line 
-    
+
+  
