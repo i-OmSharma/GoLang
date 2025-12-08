@@ -66,6 +66,8 @@
     
 26. Buffer Reader is a type of reader, thart reads data frim an underlying source, such as a file or standard input(keyboard or mouse), and store data in buffer. The buffer is a teporary storage area in memory. Buffer reader are commonly used to improve the effeciency on imput operations. 
 
+27. In Go, the underscore(_) is used as a blank indentifier. It serves as a white-only variable that allows you to discard values return by a function ot to ignore specific value when you are not intrested in using them.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
@@ -84,5 +86,16 @@ Format specifiers:
 
 
 \n new line 
+
+Error
+
+value, err := SomeFunction()
+if err != nil {
+    fmt.Println("Error", err)
+    return
+}
+fmt.println(value)
+
+
 
   
