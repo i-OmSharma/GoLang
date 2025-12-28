@@ -68,6 +68,34 @@
 
 27. In Go, the underscore(_) is used as a blank indentifier. It serves as a white-only variable that allows you to discard values return by a function ot to ignore specific value when you are not intrested in using them.
 
+28. Arrays are declared using the syntax "var name [size] type", when name is the array variable, "size" is the number of elements and "type" is the data type of the elements.
+
+29. Arrays have fixed size,size must be intialise at the time of declared. 
+
+30. To find lenght of an array we use len(array_name).
+
+31. Access index of array same as other languages, arrary_name[index].
+
+32. Default value of Data types:
+
++---------------------------+----------------------+
+| Category                  | Default (Zero Value)|
++---------------------------+----------------------+
+| All numeric types         | 0                    |
+|   (int, uint, float, etc) |                      |
+| Boolean                   | false                |
+| String                    | ""                   |
+| Pointer                   | nil                  |
+| Slice                     | nil                  |
+| Map                       | nil                  |
+| Channel                   | nil                  |
+| Interface                 | nil                  |
+| Struct                    | Fields ki zero value |
++---------------------------+----------------------+
+
+
+33. "%q" --> quoted string.
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
@@ -95,6 +123,12 @@ if err != nil {
     return
 }
 fmt.println(value)
+
+
+Arrays:
+Declaration:
+
+var name[size] type, name is the array variable , size number of element, type is data type
 
 
 
