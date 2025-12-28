@@ -96,6 +96,35 @@
 
 33. "%q" --> quoted string.
 
+34. A slice is a flexible and dynamic DS. 
+    Slice is same as ArrayList in java.
+    
+35. Unlike arrys slices have a dynamic size, and their length can be changed suring the program execution.
+
+36. TO know about data Type we use "%T" with fmt.Printf.
+
+37. make is used to allocate and initialize slices, maps and channels.
+    under the hood it uses "struct" data type.
+    
+    -- type slice struct {
+            ptr *T
+            len int
+            cap int
+        }
+
+38. it takes data type, length, capacity.
+
+39. if capacity is not given, capacity = length.
+    - make allows creating a slice with predefined length and capacity.
+    - when we use "make" it becomes custom u can assign any value to and make slice according to u.
+    
+40. capacity grows automatically on append (growth is implementation dependent),
+    when requirement increases the capacity double its size.
+    
+41. length increases only when elements are added
+    
+    
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
