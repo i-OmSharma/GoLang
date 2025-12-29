@@ -123,7 +123,15 @@
     
 41. length increases only when elements are added
     
+42. Go precedence relevant part:
+    - () highest  
+    - &&
+    - ||
+43. Expression inside a () becomes a unit.
+    - the & is applied
+    - || is least
     
+44. Execution → left to right
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
