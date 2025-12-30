@@ -133,6 +133,22 @@
     
 44. Execution → left to right
 
+45. Switch is same as other languages.
+
+46. There is only 1 loop in Go that is for loop.
+
+47. We can modify the for loop writing style to convert it into, for, while, infinite, or for certain range.
+
+48. infinite loop + breake is while.
+
+49. The "range" keyword simplifies loop over eleemnt of a conllection like slices, arrays, maps and Strings.
+
+50. "range" simplifies the process of iterating over elements in various types of Collection such as slices, arrays, maps and strings.
+        - It provides both the index(or the key in the case of maps) adn the value of each element in the Collection.
+        
+51. "breake" to exit a lop prematurely or "continue" to move to the next iteration.
+
+52. There is no do-while loop in Go, but you can achive similar behaviuour using a for loop with a optional check at the end.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
