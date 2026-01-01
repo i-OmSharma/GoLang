@@ -149,6 +149,10 @@
 51. "breake" to exit a lop prematurely or "continue" to move to the next iteration.
 
 52. There is no do-while loop in Go, but you can achive similar behaviuour using a for loop with a optional check at the end.
+
+53. "new" operator is used to allocate memory for a value of a given type and return a pointer to it.
+
+54. Returns a pointer (*T)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
