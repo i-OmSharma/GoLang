@@ -17,5 +17,14 @@ func main() {
 
 	fmt.Println("Person Om", Om)
 	
+	// Second Method
+	Person1 := Person {
+		FristName: "Akash",
+		LastName: "Bikash",
+		Age: 23,
+	}
+	
+	fmt.Println("Person1 details : ", Person1)
+	
 	
 }
