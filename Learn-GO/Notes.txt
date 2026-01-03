@@ -152,7 +152,17 @@
 
 53. "new" operator is used to allocate memory for a value of a given type and return a pointer to it.
 
-54. Returns a pointer (*T)
+54. Returns a pointer (*T).
+
+55. A pointer is a variable that store the memory address of another variable.
+
+56. Pointer are used to indirectly refer to the value stored in a variable, rather then the value itself.
+
+57. They provide a way to with memory directly, which can be useful for various programming tasks, including memory management and sharing data between functions. 
+
+58. To declare a pointer use "*", and to initilaize the pointer use address-of "&".
+
+59. default pointer is nil.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
