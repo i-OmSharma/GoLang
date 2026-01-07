@@ -163,6 +163,15 @@
 58. To declare a pointer use "*", and to initilaize the pointer use address-of "&".
 
 59. default pointer is nil.
+
+60. Time package has tfixed format "YYY-MM-DD 24hr-min-sec".
+
+61. Type of time is "time.Time"
+
+62. To use current date/time/AM-PM we have to use exactly this:
+        - "dd-mm-yyyy":"02-01-2006" for date
+        - "weekday":"Monday" for day 
+        - "hh:mm:ss":"15:04:05"
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
