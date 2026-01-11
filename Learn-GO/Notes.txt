@@ -172,6 +172,10 @@
         - "dd-mm-yyyy":"02-01-2006" for date
         - "weekday":"Monday" for day 
         - "hh:mm:ss":"15:04:05"
+        
+63. Multiple differ leads to stack DS.
+
+64. defer" is always put before function call, so that it executs it at very last.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
