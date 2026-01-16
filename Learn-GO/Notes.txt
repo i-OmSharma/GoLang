@@ -176,6 +176,46 @@
 63. Multiple differ leads to stack DS.
 
 64. defer" is always put before function call, so that it executs it at very last.
+
+65. File Handling:
+    1. "io" package in Go for writing to a file.
+    2. "io.WriteString" function is a convenient way to write a string to a file.
+    3. Close() is responsible for releasing resources.
+    4. When open a file using function like "os.Create", "os.Open" or other, we accuriring system resources to unteract with that file.  
+    5. Failing to close the file propelerly can lead to resources leak and might cause issues like running out of file description.
+    6. The "io.WriteString" funciton return 2 values:
+        - The number of bytes written: the integer represent the number of bytes written to the file.
+        - An error: if the write operation encounters an eeror, it will be non-nil, indicating that something went wrong.
+    7. os.Open("example.txt") attempts to open the file named "example.txt."
+
+If there's an error (e.g., the file doesn't exist), it prints an error message and exits the program.
+
+defer file.Close() ensures that the file is closed when the main function exits, regardless of how it exits.
+
+Buffer Creation:
+
+make([]byte, 1024) creates a byte slice (buffer) with a capacity of 1024 bytes. This buffer will be used to read chunks of the file.
+
+Read File Content:
+
+file.Read(buffer) reads content from the file into the buffer.
+
+The loop continues until the end of the file (EOF) is reached. I
+
+If there's an error during the read operation (other than EOF), it prints an error message and exits the program.
+
+fmt.Print(string(buffer[:n])) processes and prints the read content. In this example, it prints the content as a string.
+
+8. 1. ioutil. ReadFile("example.txt") reads the entire content of the file into a byte slice (content).
+
+2. If there's an error during the read operation, it prints an error message and returns.
+
+3. The file content is then processed (in this case, printed).
+
+Using ioutil. ReadFile is convenient for scenarios where you want to read the entire content of a file into memory. However, keep in mind that it might not be suitable for very large files as it loads the entire content into memory at once. For larger files, reading in chunks as shown in the previous example may be more appropriate.
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Vaiable in GO-
@@ -211,5 +251,22 @@ Declaration:
 var name[size] type, name is the array variable , size number of element, type is data type
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+WEB!
 
+1. A web request in Go is an HTTP request used to communicate with a server or API.
+
+2. Go uses the net/http package to send requests and receive responses.
+
+3. http.Get() returns an *http.Response containing status, headers, and body.
+
+4. response.Body is a stream of raw bytes and must be closed after use.
+
+5. defer response.Body.Close() prevents resource and connection leaks.
+
+6. io.ReadAll(response.Body) reads the full response into a []byte ([]uint8).
+
+7. string(body) only converts bytes to readable text; it does not change the response.
+
+8. The response content (HTML or JSON) depends on the requested URL endpoint.
   
