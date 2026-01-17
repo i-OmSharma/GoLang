@@ -270,3 +270,26 @@ WEB!
 
 8. The response content (HTML or JSON) depends on the requested URL endpoint.
   
+9. URLs identify internet resources like web pages, images, and files.
+
+10. Go provides the net/url package to parse, build, and modify URLs.
+
+11. url.Parse() converts a URL string into a *url.URL object.
+
+12. A parsed URL can be broken into components such as scheme, host, path, and query.
+
+13. Scheme defines the protocol (e.g., http, https).
+
+14. Host contains the domain name and optional port.
+
+15. Path specifies the resource location on the server.
+
+16. RawQuery stores the raw query string after ?.
+
+17. Query parameters are key–value pairs separated by &.
+
+18. Query parameters are handled using url.Values (map of keys to values).
+
+19. URL components can be modified directly by changing fields of url.URL.
+
+20. url.String() converts the modified url.URL object back to a URL string.
