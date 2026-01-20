@@ -293,3 +293,15 @@ WEB!
 19. URL components can be modified directly by changing fields of url.URL.
 
 20. url.String() converts the modified url.URL object back to a URL string.
+
+21. JSON - JavaScript Object Notation
+
+22. In Go, "encoding/json" package is used to encode adn decode JSON data.
+
+23. JSON is lightweight, data-interchnage format is easy for huamn read and write.
+
+24. How to define and use JSON in Go:
+
+    - Defining Struct : Define a struct that represent the JSON data structure.Each field in the struct should have a tag specifying the JSON Key associated with it.
+    - Marshelling(Encoding) : Use "json.Marshal" to convert a Go struct into a JSON-encoded byte array.
+    - Unmarshelling(Decoding) : Use "json.Unmarshel" to convert a JSON-encoded bye array into a Go struct.
