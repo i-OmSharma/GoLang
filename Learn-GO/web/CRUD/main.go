@@ -52,11 +52,3 @@ func main() {
 	}
 	fmt.Println("Todo is : ", todo)
 	
-	err = json.Unmarshal(&todo)
-	if err != nil{
-		fmt.Println("error while Unmarshellig: ", err)
-		return
-	} 
-	fmt.Println("Decoded data is: ",)
-	
-}
