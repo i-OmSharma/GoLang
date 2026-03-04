@@ -305,3 +305,61 @@ WEB!
     - Defining Struct : Define a struct that represent the JSON data structure.Each field in the struct should have a tag specifying the JSON Key associated with it.
     - Marshelling(Encoding) : Use "json.Marshal" to convert a Go struct into a JSON-encoded byte array.
     - Unmarshelling(Decoding) : Use "json.Unmarshel" to convert a JSON-encoded bye array into a Go struct.
+    
+    
+    
+    
+    
+    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------    
+    
+Goroutines:
+ 
+1. sync.WaitGroup is a sychronization primitive in Go that is used for a collection of goroutines to finish their execution.
+2. sync.WaitGroup is used to wait for multiple goroutines to finish.
+3. Helps synchronize concurrent goroutines with the main program.
+4. Maintains an internal counter of active goroutines.
+
+How it works:
+
+1. Add(n): Increases the counter by n (number of goroutines).
+2. Done(): Decreases the counter by 1 (called when a goroutine finishes).
+3. Wait(): Blocks execution until the counter becomes 0.
+
+Key point:
+Wait() ensures the main goroutine continues only after all goroutines complete. 
+
+
+Goroutines (Tasks):
+
+1.Goroutines are like individual tasks for preparing a dinner party.
+
+2.Examples: setting the table, cooking food, decorating the room.
+
+3.Multiple tasks run concurrently, just like goroutines run in parallel.
+
+sync.WaitGroup:
+
+1.sync.WaitGroup works like a checklist or to-do list for all tasks.
+
+2.It helps track which tasks are completed.
+
+3.Ensures the program waits until all goroutines finish before continuing.
+
+How it works:
+
+Add(n) → Adds n tasks to the checklist (number of goroutines).
+
+Done() → Marks a task as completed (called when a goroutine finishes).
+
+Wait() → Waits until all tasks are done before moving forward.
+
+Key Points:
+
+1.Ensures all goroutines finish before the main program continues.
+
+2.Helps synchronize concurrent execution in Go.
+
+3.sync.WaitGroup is commonly used but not mandatory.
+
+4.Channels can also be used to synchronize goroutines.
