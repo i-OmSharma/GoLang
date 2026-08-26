@@ -1,0 +1,10 @@
+// Every process which runs concurrently in golang is called Goroutines
+// every goroutines represents a light weight threads.
+// creation cost of goroutine is very small as comared to threads.
+
+// Every program had at least single goroutine called main function!
+
+// when main is terminated then all goroutines will be terminated means all routines work under main 
+
+// Goroutine uses dynamic statck that grows and shrinks  as needed.
+//While os threads use a fixed stack size that cann't chnage after creation. 
